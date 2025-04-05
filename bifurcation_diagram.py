@@ -28,9 +28,10 @@ def bifurcation_diagram():
     print("done")
     plt.figure(figsize=(20, 10))
     plt.plot(r_axis, x_axis, ',k', alpha=0.25)
-    plt.xlabel('r')
-    plt.ylabel('x')
-    plt.title('diagram bifurkacyjny')
+    plt.xlabel('r', fontsize=30)
+    plt.ylabel('x', fontsize=30)
+    plt.title('diagram bifurkacyjny', fontsize=40)
+    plt.tick_params(axis='both', which='major', labelsize=20)
     plt.show()
 
 
